@@ -1,18 +1,107 @@
-# React + Vite
+# PausePath
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Basic Details
 
-Currently, two official plugins are available:
+### Team Name: Aparna VS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Team Members
 
-## React Compiler
+- Member 1: Aparna VS
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Hosted Project Link
 
-Note: This will impact Vite dev & build performances.
+[To be added]
 
-## Expanding the ESLint configuration
+### Project Description
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Your mindful break companion. PausePath is a React-based web dashboard providing various mindful activities like relaxation exercises, mood music, soul stories, a talk space, and break reminders to help users take a moment to breathe and recharge.
+
+### The Problem statement
+
+In today's fast-paced digital world, people often forget to take meaningful breaks, leading to burnout, stress, and reduced productivity. There is a need for an integrated platform that gently reminds and assists users in taking mindful breaks.
+
+### The Solution
+
+PausePath offers a serene, interactive dashboard that combines several wellness tools in one place. Users can access break reminders, mood-enhancing music, relaxation and breathing exercises, interactive soul stories, and a safe talk space, all wrapped in a calming interface with dynamic themes and background effects.
+
+---
+
+## Technical Details
+
+### Technologies/Components Used
+
+**For Software:**
+
+- **Languages used:** JavaScript (React), HTML, CSS
+- **Frameworks/Build Tools used:** React 19, Vite
+- **Libraries used:** Tailwind CSS, Framer Motion, Lucide React
+- **Tools used:** Git, VS Code
+
+---
+
+## Features
+
+- **Relax & Recharge:** Guided exercises to help you unwind and center yourself.
+- **Soul Stories:** Engaging, mindful stories that provide mental escapes.
+- **Break Reminders:** Gentle notifications ensuring you take necessary breaks from work.
+- **Mood Music:** Curated background audio to match your desired state of mind.
+- **Talk Space:** A dedicated area for expressing thoughts and unwinding.
+- **Dynamic Interface:** Supports light and dark modes with calming background effects, daily affirmations, and quote popups.
+
+---
+
+## Implementation
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run
+
+```bash
+npm run dev
+```
+
+---
+
+## Project Documentation
+
+### Screenshots
+
+![Screenshot 1](./img/1.png)
+![Screenshot 2](./img/2.png)
+
+### Diagrams
+
+**System Architecture:**
+
+```mermaid
+graph TD
+    App[PausePath App] --> Theme[Theme Controller]
+    App --> BG[Background Effects]
+    App --> Dash[Dashboard]
+
+    Dash --> Relax[Relax & Recharge]
+    Dash --> Stories[Soul Stories]
+    Dash --> Break[Break Reminder]
+    Dash --> Music[Mood Music]
+    Dash --> Talk[Talk Space]
+```
+
+---
+
+## Team Contributions
+
+- **Aparna VS**: Full Stack Development, UI/UX Design, Testing, Documentation, and Project Setup.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ at TinkerHub
