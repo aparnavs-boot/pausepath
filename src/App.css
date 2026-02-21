@@ -1,0 +1,96 @@
+.app-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.app-header h1 {
+    font-size: 4.5rem;
+    background: linear-gradient(90deg, var(--accent), var(--primary), var(--secondary), var(--accent));
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+    animation: shine 5s linear infinite;
+    text-shadow: 0 0 20px rgba(196, 181, 253, 0.2);
+}
+
+@keyframes shine {
+    to {
+        background-position: 300% center;
+    }
+}
+
+.app-header p {
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3.5rem;
+    flex-grow: 1;
+    position: relative;
+    z-index: 10;
+}
+
+/* Base styles for dashboard sections */
+.dashboard-section {
+    opacity: 1;
+    /* Relying on framer-motion in JSX for entry animation, stripping CSS animations */
+}
+
+.app-footer {
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--surface-border);
+    color: var(--text-secondary);
+    font-size: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .dashboard {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .talk-section {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 2rem 1rem;
+    }
+
+    .app-header h1 {
+        font-size: 3rem;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .talk-section {
+        grid-column: auto;
+    }
+}
