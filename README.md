@@ -10,7 +10,7 @@
 
 ### Hosted Project Link
 
-[To be added]
+[https://pausepath.aparnavs014.workers.dev/](https://pausepath.aparnavs014.workers.dev/)
 
 ### Project Description
 
@@ -105,3 +105,4 @@ This project is licensed under the MIT License.
 ---
 
 Made with ❤️ at TinkerHub
+
